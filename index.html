@@ -17,10 +17,13 @@
     font-weight: 700;
   }
 
-  /* Apply light ivory heavy shadow to ALL text inside the container */
+  /* Apply misty, large, ivory glow to ALL text inside the container */
   .container {
     padding: 50px;
-    text-shadow: 2px 2px 6px rgba(255, 255, 240, 0.9); /* heavy ivory shadow */
+    text-shadow: 
+      0 0 8px rgba(255, 255, 240, 1),   /* bright ivory core */
+      0 0 16px rgba(255, 255, 240, 0.9), /* extended glow */
+      0 0 32px rgba(255, 255, 240, 0.8); /* outer mist */
   }
 
   .title {
@@ -66,7 +69,7 @@
     border-radius: 4px;
     transition: background 0.3s ease;
     font-weight: 700;
-    text-shadow: none; /* no shadow on the button text */
+    text-shadow: none; /* no glow on button text */
   }
 
   .enquire-button:hover {
