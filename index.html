@@ -21,11 +21,14 @@
     to { opacity: 1; }
   }
   .container, 
-  .container * {
-    text-shadow: 
-      0 0 30px rgba(255, 255, 240, 1),
-      0 0 60px rgba(255, 255, 240, 1),
-      0 0 120px rgba(255, 255, 240, 1);
+.container * {
+  text-shadow: 
+    0 0 30px rgba(255, 255, 240, 1),
+    0 0 60px rgba(255, 255, 240, 1),
+    0 0 120px rgba(255, 255, 240, 1);
+  
+  -webkit-text-stroke: 0.5px #8e8b82; /* light stone grey-beige */
+  paint-order: stroke fill;
   }
   .title {
     font-family: 'Cinzel', serif;
