@@ -20,16 +20,16 @@
     from { opacity: 0; }
     to { opacity: 1; }
   }
-  .container, 
-.container * {
-  text-shadow: 
-    0 0 30px rgba(255, 255, 240, 1),
-    0 0 60px rgba(255, 255, 240, 1),
-    0 0 120px rgba(255, 255, 240, 1);
-  
-  -webkit-text-stroke: 0.5px #8e8b82; /* light stone grey-beige */
-  paint-order: stroke fill;
-  }
+  .container, .container * {
+    /* Strong text stroke */
+    -webkit-text-stroke: 1.2px #7c7a70; /* stone-grey tone */
+    paint-order: stroke fill;
+
+    /* Optional: reduce glow to balance stroke */
+    text-shadow: 
+      0 0 10px rgba(255, 255, 240, 0.8),
+      0 0 20px rgba(255, 255, 240, 0.6);
+}
   .title {
     font-family: 'Cinzel', serif;
     font-size: 82px;
