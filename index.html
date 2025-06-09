@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>NVMA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap" rel="stylesheet" />
   <style>
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('backgroundnvma.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('backgroundnvma.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Playfair Display', serif;
+      color: #444;
+      font-weight: 600; /* semi-bold base */
+    }
+
     .container {
       padding: 50px;
     }
+
     .title {
       font-family: 'Cinzel', serif;
       font-size: 64px;
       color: #4a4a4a; /* dark stone color */
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 700; /* bold title */
     }
+
+    /* center dots and give fixed width */
+    .dots {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+    }
+
+    .content {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
     .subtitle {
       font-size: 18px;
       margin-top: 10px;
       color: #333;
+      font-weight: 700; /* bold subtitle */
     }
+
     .enquire-button {
       display: inline-block;
       margin-top: 20px;
@@ -37,31 +61,35 @@ body {
       font-size: 16px;
       border-radius: 4px;
       transition: background 0.3s ease;
+      font-weight: 700; /* bold button text */
     }
+
     .enquire-button:hover {
       background-color: rgba(50, 50, 50, 0.9);
     }
+
     .description {
       font-size: 14px;
       margin-top: 20px;
-      max-width: 400px;
-      color: #444;
       line-height: 1.6;
+      font-weight: 600; /* semi-bold paragraphs */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="title">· NVMA ·</div>
-    <div class="subtitle">Matter becomes meaning...</div>
-    <a class="enquire-button" href="mailto:dani.munro@proton.me">Enquire within</a>
-    <div class="description">
-<div class="description">
-  <p>At numa, raw elements are transformed into refined expressions. Each creation carries a unique story, blending craftsmanship with intuition.</p>
-  <p>Inspired by a blend of classical heritage and contemporary vision, the works transcend utility to evoke emotion and provoke thought.</p>
-  <p>They embody subtle elegance, tactile richness, and a quiet sophistication that endures.</p>
-  <p>This is where substance reveals its soul and creativity finds its voice.</p>
-</div>
+    <div class="title"><span class="dots">·</span> NVMA <span class="dots">·</span></div>
+    <div class="content">
+      <div class="subtitle">Matter becomes meaning...</div>
+      <a class="enquire-button" href="mailto:dani.munro@proton.me">Enquire within</a>
+      <div class="description">
+        <p>at numa, raw elements are transformed into refined expressions.</p>
+        <p>each creation carries a unique story, blending craftsmanship with intuition.</p>
+        <p>inspired by a blend of classical heritage and contemporary vision, the works transcend utility to evoke emotion and provoke thought.</p>
+        <p>they embody subtle elegance, tactile richness, and a quiet sophistication that endures.</p>
+        <p>this is where substance reveals its soul and creativity finds its voice.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
