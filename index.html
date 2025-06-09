@@ -17,20 +17,17 @@
     font-weight: 700;
   }
 
-  /* Apply misty, large, ivory glow to ALL text inside the container */
   .container {
     padding: 50px;
   }
 
-  /* Heavy ivory glow applied to ALL text elements */
+  /* Apply heavy ivory glow to ALL text inside the container */
   .container, 
-  .title, 
-  .subtitle, 
-  .description p {
+  .container * {
     text-shadow: 
-      0 0 30px rgba(255, 255, 240, 1),    /* very strong inner glow */
-      0 0 60px rgba(255, 255, 240, 1),    /* strong mid glow */
-      0 0 120px rgba(255, 255, 240, 1);   /* large, dense outer mist */
+      0 0 30px rgba(255, 255, 240, 1),
+      0 0 60px rgba(255, 255, 240, 1),
+      0 0 120px rgba(255, 255, 240, 1);
   }
 
   .title {
@@ -65,7 +62,7 @@
     font-weight: 700;
   }
 
-  .enquire-button, .gallery-button {
+  .gallery-button, .enquire-button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -76,7 +73,7 @@
     border-radius: 4px;
     transition: background 0.3s ease;
     font-weight: 700;
-    text-shadow: none; /* no glow on button text */
+    text-shadow: none; /* No glow on button text */
   }
 
   .enquire-button:hover, .gallery-button:hover {
@@ -86,7 +83,7 @@
   .description {
     font-size: 18px;
     margin-top: 20px;
-    line-height: 1.6; /* original spacing */
+    line-height: 1.6;
     font-weight: 700;
   }
   </style>
@@ -100,7 +97,11 @@
     </div>
     <div class="content">
       <div class="subtitle">Matter becomes meaning...</div>
+      
+      <!-- Swapped Buttons -->
+      <a class="gallery-button" href="gallery.html">Gallery</a>
       <a class="enquire-button" href="mailto:dani.munro@proton.me">Enquire within</a>
+
       <div class="description">
         <p>At NVMA, raw elements are transformed into refined expressions.</p>
         <p>Each creation carries a unique story, blending craftsmanship with intuition.</p>
@@ -108,7 +109,6 @@
         <p>They embody subtle elegance, tactile richness, and a quiet sophistication that endures.</p>
         <p>This is where substance reveals its soul and creativity finds its voice.</p>
       </div>
-      <a class="gallery-button" href="gallery.html">Gallery</a>
     </div>
   </div>
 </body>
