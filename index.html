@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>NVMA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
   <style>
   body {
     margin: 0;
@@ -45,10 +45,15 @@
     text-align: center;
   }
 
-  .nvma-text {
-    display: inline-block;
-  }
-
+.nvma-text {
+  font-family: 'Cinzel', serif;
+  font-weight: 700; /* bold */
+  color: #4a4a4a;
+  text-shadow: 
+    1px 1px 0 #fff,      /* light edge to make it 'pop' like engraving */
+    -1px -1px 0 #ccc,    /* subtle inner shadow for depth */
+    0 0 30px rgba(255, 255, 240, 0.6); /* slight ivory glow to keep the mist effect */
+}
   .content {
     text-align: left;
     max-width: 600px;
