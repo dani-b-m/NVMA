@@ -20,10 +20,17 @@
   /* Apply misty, large, ivory glow to ALL text inside the container */
   .container {
     padding: 50px;
+  }
+
+  /* Heavy ivory glow applied to ALL text elements */
+  .container, 
+  .title, 
+  .subtitle, 
+  .description p {
     text-shadow: 
       0 0 30px rgba(255, 255, 240, 1),    /* very strong inner glow */
       0 0 60px rgba(255, 255, 240, 1),    /* strong mid glow */
-      0 0 120px rgba(255, 255, 240, 1);    /* large, dense outer mist */
+      0 0 120px rgba(255, 255, 240, 1);   /* large, dense outer mist */
   }
 
   .title {
@@ -48,7 +55,7 @@
   .content {
     text-align: left;
     max-width: 600px;
-    margin-left: 130px;
+    margin-left: 110px;
   }
 
   .subtitle {
@@ -79,7 +86,7 @@
   .description {
     font-size: 18px;
     margin-top: 20px;
-    line-height: 1.6; /* reduced spacing back to original */
+    line-height: 1.6; /* original spacing */
     font-weight: 700;
   }
   </style>
